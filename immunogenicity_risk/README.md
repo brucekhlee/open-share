@@ -137,3 +137,5 @@ python $DIR_immunogenicity_risk/app/iedb_mhcii.py okt3.fa | tee iedb_mhcii.log
 | `biophi_humanness.log` | Log containing parsed global antibody humanness metrics |
 | `biophi_counts.log` | Log detailing counts and region locations of non-human 9-mer hotspots |
 | `iedb_mhcii.log` | Log containing IEDB MHC-II binding predictions and filtered strong binder hotspots |
+
+- ex_okt3 Directory: Serves as a set of output examples (an outputs example).
