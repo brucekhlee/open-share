@@ -1,0 +1,27 @@
+======================================================================
+FASTA File Analyzed: okt3.fa
+Target Allele: HLA-DRB1*01:01
+Rank Cutoff: < 2.0% (Strong Binders / Hotspots)
+======================================================================
+🔹 Loaded Chain: okt3_heavy (Length: 118 aa)
+🔹 Loaded Chain: okt3_light (Length: 107 aa)
+
+Querying IEDB MHC-II API...
+
+--- Equivalent cURL Command ---
+curl --data "method=recommended&sequence_text=%3Eokt3_heavy%0AQVQLQQSGAELARPGASVKLSCKASGYTFTRYTMHWVKQRPGQGLEWIGYINPSRGYTNYNQKFKDKATLTDKSSSTAYMQLSSLTSEDSAVYYCARYYDDHYCLDYWGQGTTLTVSS%0A%3Eokt3_light%0ADIQMTQTTSSLSASLGDRVTISCRASQDIRNYLNWYQQKPDGTVKLLIYYTSRLHSGVPSRFSGSGSGTDYSLTISNLEQEDIATYFCQQGNTLPWTFGGGTKLEIK%0A&allele=HLA-DRB1%2A01%3A01" https://tools-cluster-interface.iedb.org/tools_api/mhcii/
+----------------------------------------------------------------------
+
+======================================================================
+Prediction Results & High-Risk Hotspot Filtering
+======================================================================
+Total peptides evaluated: 197
+Total high-risk hotspots found (Rank < 2.0%): 5
+
+Detailed High-Risk Hotspots:
+  * [Chain: okt3_heavy | Allele: HLA-DRB1*01:01] Peptide: STAYMQLSSLTSEDS (Core: YMQLSSLTS) | Rank: 0.55%
+  * [Chain: okt3_heavy | Allele: HLA-DRB1*01:01] Peptide: SSTAYMQLSSLTSED (Core: YMQLSSLTS) | Rank: 0.81%
+  * [Chain: okt3_light | Allele: HLA-DRB1*01:01] Peptide: IATYFCQQGNTLPWT (Core: YFCQQGNTL) | Rank: 1.1%
+  * [Chain: okt3_light | Allele: HLA-DRB1*01:01] Peptide: DIATYFCQQGNTLPW (Core: YFCQQGNTL) | Rank: 1.5%
+  * [Chain: okt3_light | Allele: HLA-DRB1*01:01] Peptide: EDIATYFCQQGNTLP (Core: YFCQQGNTL) | Rank: 1.8%
+======================================================================
