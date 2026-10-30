@@ -75,8 +75,8 @@ Set the project root directory environment variable and create a dedicated worki
 export DIR_immunogenicity_risk=$PWD
 
 # Create and switch to the test execution directory
-mkdir -p testrun
-cd testrun
+mkdir -p demo_okt3
+cd demo_okt3
 ```
 
 ---
@@ -138,4 +138,4 @@ python $DIR_immunogenicity_risk/app/iedb_mhcii.py okt3.fa | tee iedb_mhcii.log
 | `biophi_counts.log` | Log detailing counts and region locations of non-human 9-mer hotspots |
 | `iedb_mhcii.log` | Log containing IEDB MHC-II binding predictions and filtered strong binder hotspots |
 
-- ex_okt3 Directory: Serves as a set of output examples (an outputs example).
+- demo_okt3 Directory: Serves as a set of output examples (an outputs example).

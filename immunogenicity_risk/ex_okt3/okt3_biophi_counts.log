@@ -1,10 +1,18 @@
 =================================================================
-File Analyzed: oasis_okt3.xlsx
+File Analyzed: okt3_oasis.xlsx
 Antibody Immunogenicity Hotspots (Non-human / Low-frequency Peptides)
 OAS Frequency Threshold: < 1.0% (including zero-hit segments)
 =================================================================
 
-🔹 Heavy Chain:
+🔹 Chain / Sheet: Overview (Skipped: missing required columns)
+
+🔹 Chain / Sheet: VH (Skipped: missing required columns)
+
+🔹 Chain / Sheet: VL (Skipped: missing required columns)
+
+🔹 Chain / Sheet: OASis Curves (Skipped: missing required columns)
+
+🔹 Chain / Sheet: okt3_heavy
   - Total valid 9-mers: 110
   - Segments with 0 OAS occurrence frequency: 38
   - Total segments with frequency < 1.0% (Non-human count): 42
@@ -13,7 +21,7 @@ OAS Frequency Threshold: < 1.0% (including zero-hit segments)
     * [Kabat: H5, Region: FR1] Sequence: QQSGAELAR
     * [Kabat: H30, Region: FR1] Sequence: TRYTMHWVK
 
-🔹 Light Chain:
+🔹 Chain / Sheet: okt3_light
   - Total valid 9-mers: 99
   - Segments with 0 OAS occurrence frequency: 21
   - Total segments with frequency < 1.0% (Non-human count): 23

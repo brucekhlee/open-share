@@ -4,31 +4,39 @@ import pandas as pd
 
 def calculate_humanness_scores(excel_path):
     """
-    Read antibody peptide data from the specified Excel file
+    Read antibody peptide data from all worksheets in the specified Excel file
     and calculate multi-dimensional Humanness Scores based on OAS 9-mer frequencies.
     """
     try:
-        # Load heavy and light chain worksheets
-        heavy_df = pd.read_excel(excel_path, sheet_name='okt3_heavy')
-        light_df = pd.read_excel(excel_path, sheet_name='okt3_light')
+        xls = pd.ExcelFile(excel_path)
+        sheet_names = xls.sheet_names
     except Exception as e:
         print(f"Error reading Excel file '{excel_path}': {e}")
         sys.exit(1)
-
-    chains = {"Heavy Chain": heavy_df, "Light Chain": light_df}
 
     print("=" * 65)
     print(f"File Analyzed: {excel_path}")
     print("Antibody Humanness Score Summary")
     print("=" * 65)
 
-    for chain_name, df in chains.items():
+    for sheet_name in sheet_names:
+        try:
+            df = pd.read_excel(xls, sheet_name=sheet_name)
+        except Exception as e:
+            print(f"\n🔹 Chain / Sheet: {sheet_name} (Error reading worksheet: {e})")
+            continue
+
+        # Check required columns
+        if 'Peptide Fraction OAS Subjects' not in df.columns:
+            print(f"\n🔹 Chain / Sheet: {sheet_name} (Skipped: missing required columns)")
+            continue
+
         # Drop missing values
         valid_df = df.dropna(subset=['Peptide Fraction OAS Subjects'])
         total_kmers = len(valid_df)
 
         if total_kmers == 0:
-            print(f"\n🔹 {chain_name}: No valid 9-mer data found.")
+            print(f"\n🔹 Chain / Sheet: {sheet_name}: No valid 9-mer data found.")
             continue
 
         # Metric A: Mean 9-mer OAS peptide fraction
@@ -41,7 +49,7 @@ def calculate_humanness_scores(excel_path):
         # Metric C: Non-human / Low-frequency 9-mer count (frequency < 1%)
         non_human_count = (valid_df['Peptide Fraction OAS Subjects'] < 0.01).sum()
 
-        print(f"\n🔹 {chain_name}:")
+        print(f"\n🔹 Chain / Sheet: {sheet_name}")
         print(f"  - Total valid 9-mers: {total_kmers}")
         print(f"  - Mean OAS Peptide Fraction Score: {mean_fraction:.4f} ({mean_fraction * 100:.2f}%)")
         print(
@@ -52,7 +60,6 @@ def calculate_humanness_scores(excel_path):
 
 
 if __name__ == "__main__":
-    # Check command-line arguments
     if len(sys.argv) < 2:
         print("Usage: python calculate_humanness.py <excel_file_path>")
         print("Example: python calculate_humanness.py oasis_okt3.xlsx")

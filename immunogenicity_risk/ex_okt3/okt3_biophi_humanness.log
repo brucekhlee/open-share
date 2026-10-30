@@ -1,15 +1,23 @@
 =================================================================
-File Analyzed: oasis_okt3.xlsx
+File Analyzed: okt3_oasis.xlsx
 Antibody Humanness Score Summary
 =================================================================
 
-🔹 Heavy Chain:
+🔹 Chain / Sheet: Overview (Skipped: missing required columns)
+
+🔹 Chain / Sheet: VH (Skipped: missing required columns)
+
+🔹 Chain / Sheet: VL (Skipped: missing required columns)
+
+🔹 Chain / Sheet: OASis Curves (Skipped: missing required columns)
+
+🔹 Chain / Sheet: okt3_heavy
   - Total valid 9-mers: 110
   - Mean OAS Peptide Fraction Score: 0.3291 (32.91%)
   - Human-like 9-mer Ratio (>= 1% frequency): 0.6182 (68/110)
   - Non-human 9-mer Count (< 1% frequency): 42
 
-🔹 Light Chain:
+🔹 Chain / Sheet: okt3_light
   - Total valid 9-mers: 99
   - Mean OAS Peptide Fraction Score: 0.4761 (47.61%)
   - Human-like 9-mer Ratio (>= 1% frequency): 0.7677 (76/99)

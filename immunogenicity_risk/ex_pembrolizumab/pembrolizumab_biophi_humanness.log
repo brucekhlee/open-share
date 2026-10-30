@@ -1,0 +1,26 @@
+=================================================================
+File Analyzed: pembrolizumab_oasis.xlsx
+Antibody Humanness Score Summary
+=================================================================
+
+🔹 Chain / Sheet: Overview (Skipped: missing required columns)
+
+🔹 Chain / Sheet: VH (Skipped: missing required columns)
+
+🔹 Chain / Sheet: VL (Skipped: missing required columns)
+
+🔹 Chain / Sheet: OASis Curves (Skipped: missing required columns)
+
+🔹 Chain / Sheet: Pembrolizumab_Heavy
+  - Total valid 9-mers: 112
+  - Mean OAS Peptide Fraction Score: 0.5286 (52.86%)
+  - Human-like 9-mer Ratio (>= 1% frequency): 0.7857 (88/112)
+  - Non-human 9-mer Count (< 1% frequency): 24
+
+🔹 Chain / Sheet: Pembrolizumab_Light
+  - Total valid 9-mers: 103
+  - Mean OAS Peptide Fraction Score: 0.6822 (68.22%)
+  - Human-like 9-mer Ratio (>= 1% frequency): 0.8835 (91/103)
+  - Non-human 9-mer Count (< 1% frequency): 12
+
+=================================================================

@@ -1,0 +1,26 @@
+======================================================================
+FASTA File Analyzed: trastuzumab.fa
+Target Allele: HLA-DRB1*01:01
+Rank Cutoff: < 2.0% (Strong Binders / Hotspots)
+======================================================================
+🔹 Loaded Chain: Trastuzumab_Heavy (Length: 120 aa)
+🔹 Loaded Chain: Trastuzumab_Light (Length: 107 aa)
+
+Querying IEDB MHC-II API...
+
+--- Equivalent cURL Command ---
+curl --data "method=recommended&sequence_text=%3ETrastuzumab_Heavy%0AEVQLVESGGGLVQPGGSLRLSCAASGFNIKDTYIHWVRQAPGKGLEWVARIYPTNGYTRYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCSRWGGDGFYAMDYWGQGTLVTVSS%0A%3ETrastuzumab_Light%0ADIQMTQSPSSLSASVGDRVTITCRASQDVNTAVAWYQQKPGKAPKLLIYSASFLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQHYTTPPTFGQGTKVEIK%0A&allele=HLA-DRB1%2A01%3A01" https://tools-cluster-interface.iedb.org/tools_api/mhcii/
+----------------------------------------------------------------------
+
+======================================================================
+Prediction Results & High-Risk Hotspot Filtering
+======================================================================
+Total peptides evaluated: 199
+Total high-risk hotspots found (Rank < 2.0%): 4
+
+Detailed High-Risk Hotspots:
+  * [Chain: Trastuzumab_Heavy | Allele: HLA-DRB1*01:01] Peptide: NTAYLQMNSLRAEDT (Core: YLQMNSLRA) | Rank: 0.03%
+  * [Chain: Trastuzumab_Heavy | Allele: HLA-DRB1*01:01] Peptide: KNTAYLQMNSLRAED (Core: YLQMNSLRA) | Rank: 0.05%
+  * [Chain: Trastuzumab_Heavy | Allele: HLA-DRB1*01:01] Peptide: TAYLQMNSLRAEDTA (Core: YLQMNSLRA) | Rank: 0.48%
+  * [Chain: Trastuzumab_Heavy | Allele: HLA-DRB1*01:01] Peptide: SKNTAYLQMNSLRAE (Core: YLQMNSLRA) | Rank: 0.48%
+======================================================================

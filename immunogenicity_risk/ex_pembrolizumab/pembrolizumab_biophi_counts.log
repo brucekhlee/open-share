@@ -1,0 +1,33 @@
+=================================================================
+File Analyzed: pembrolizumab_oasis.xlsx
+Antibody Immunogenicity Hotspots (Non-human / Low-frequency Peptides)
+OAS Frequency Threshold: < 1.0% (including zero-hit segments)
+=================================================================
+
+🔹 Chain / Sheet: Overview (Skipped: missing required columns)
+
+🔹 Chain / Sheet: VH (Skipped: missing required columns)
+
+🔹 Chain / Sheet: VL (Skipped: missing required columns)
+
+🔹 Chain / Sheet: OASis Curves (Skipped: missing required columns)
+
+🔹 Chain / Sheet: Pembrolizumab_Heavy
+  - Total valid 9-mers: 112
+  - Segments with 0 OAS occurrence frequency: 24
+  - Total segments with frequency < 1.0% (Non-human count): 24
+  - High-risk hotspot examples (Top 3):
+    * [Kabat: H52A, Region: CDR2] Sequence: PSNGGTNFN
+    * [Kabat: H53, Region: CDR2] Sequence: SNGGTNFNE
+    * [Kabat: H54, Region: CDR2] Sequence: NGGTNFNEK
+
+🔹 Chain / Sheet: Pembrolizumab_Light
+  - Total valid 9-mers: 103
+  - Segments with 0 OAS occurrence frequency: 12
+  - Total segments with frequency < 1.0% (Non-human count): 12
+  - High-risk hotspot examples (Top 3):
+    * [Kabat: L25, Region: CDR1] Sequence: ASKGVSTSG
+    * [Kabat: L26, Region: CDR1] Sequence: SKGVSTSGY
+    * [Kabat: L27, Region: CDR1] Sequence: KGVSTSGYS
+
+=================================================================

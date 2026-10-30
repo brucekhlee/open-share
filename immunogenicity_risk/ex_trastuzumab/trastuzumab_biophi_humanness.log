@@ -1,0 +1,26 @@
+=================================================================
+File Analyzed: trastuzumab_oasis.xlsx
+Antibody Humanness Score Summary
+=================================================================
+
+🔹 Chain / Sheet: Overview (Skipped: missing required columns)
+
+🔹 Chain / Sheet: VH (Skipped: missing required columns)
+
+🔹 Chain / Sheet: VL (Skipped: missing required columns)
+
+🔹 Chain / Sheet: OASis Curves (Skipped: missing required columns)
+
+🔹 Chain / Sheet: Trastuzumab_Heavy
+  - Total valid 9-mers: 112
+  - Mean OAS Peptide Fraction Score: 0.5827 (58.27%)
+  - Human-like 9-mer Ratio (>= 1% frequency): 0.7500 (84/112)
+  - Non-human 9-mer Count (< 1% frequency): 28
+
+🔹 Chain / Sheet: Trastuzumab_Light
+  - Total valid 9-mers: 99
+  - Mean OAS Peptide Fraction Score: 0.7252 (72.52%)
+  - Human-like 9-mer Ratio (>= 1% frequency): 0.8990 (89/99)
+  - Non-human 9-mer Count (< 1% frequency): 10
+
+=================================================================
