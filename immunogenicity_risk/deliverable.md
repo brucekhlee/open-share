@@ -61,12 +61,12 @@ To rigorously validate and benchmark the outputs of the `immunogenicity_risk` pi
 
 | Control Type | Antibody | Risk Level | Chain | Total 9-mers | Mean OAS Score (%) | Human-like Ratio (>= 1%) | Non-human Count (< 1%) | IEDB MHC-II Hotspots (Rank < 2.0%) |
 | :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Positive Control** | OKT3 | **High Risk** | Heavy (VH) | 110 | 32.91% | 68/110 (61.82%) | **42** | **5 hotspots** (Total)[cite: 10] |
-| **Positive Control** | OKT3 | **High Risk** | Light (VL) | 99 | 47.61% | 76/99 (76.77%) | **23** | —[cite: 10] |
-| **Negative Control** | Pembrolizumab | **Low Risk** | Heavy (VH) | 112 | 52.86% | 88/112 (78.57%) | **24** | **0 hotspots** (Total)[cite: 10] |
-| **Negative Control** | Pembrolizumab | **Low Risk** | Light (VL) | 103 | 68.22% | 91/103 (88.35%) | **12** | —[cite: 10] |
-| **Negative Control** | Trastuzumab | **Low Risk** | Heavy (VH) | 112 | 58.27% | 84/112 (75.00%) | **28** | **4 hotspots** (Total)[cite: 10] |
-| **Negative Control** | Trastuzumab | **Low Risk** | Light (VL) | 99 | 72.52% | 89/99 (89.90%) | **10** | —[cite: 10] |
+| **Positive Control** | OKT3 | **High Risk** | Heavy (VH) | 110 | 32.91% | 68/110 (61.82%) | **42** | **5 hotspots** (Total) |
+| **Positive Control** | OKT3 | **High Risk** | Light (VL) | 99 | 47.61% | 76/99 (76.77%) | **23** | — |
+| **Negative Control** | Pembrolizumab | **Low Risk** | Heavy (VH) | 112 | 52.86% | 88/112 (78.57%) | **24** | **0 hotspots** (Total) |
+| **Negative Control** | Pembrolizumab | **Low Risk** | Light (VL) | 103 | 68.22% | 91/103 (88.35%) | **12** | — |
+| **Negative Control** | Trastuzumab | **Low Risk** | Heavy (VH) | 112 | 58.27% | 84/112 (75.00%) | **28** | **4 hotspots** (Total) |
+| **Negative Control** | Trastuzumab | **Low Risk** | Light (VL) | 99 | 72.52% | 89/99 (89.90%) | **10** | — |
 
 ---
 
